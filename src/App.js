@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Map from './map.js';
+import Plot from './plot.js';
 
 function App() {
   return (
     <div className="App">
+    <h2>Pollution Data</h2>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Here's the map showing the Pollution data at IIT Delhi </p>
+        <Map/>
+
+        <Plot/>
       </header>
     </div>
   );
